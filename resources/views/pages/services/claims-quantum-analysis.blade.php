@@ -4,8 +4,8 @@
     <section class="hero">
         <div class="container hero-wrap">
             <div>
-                <h1>Claims & Quantum Analysis</h1>
-                <p>CLAIMS: THE REPRESENTATION OF EVIDENCE TO WHAT IS RIGHTFULLY DEEMED APPROPRIATE IN ORDER TO RESTORE NORMALCY AND DETERMINE LEGITIMACY OF ARGUMENTATION.</p>
+                <h1>Claims and Quantum Analysis</h1>
+                <p>Disputes and variations are an inevitable part of project delivery — but with the right expertise, their impact can be effectively managed and resolved.</p>
             </div>
             <div>
                 <img src="{{ url('/images/Conclusion.jpg') }}" alt="Claims and Quantum Analysis" onerror="this.style.display='none'">
@@ -16,27 +16,25 @@
     <section>
         <div class="container">
             <h2 class="section-title">Claims and Quantum Analysis</h2>
-            <p>Claims analysis is the technique of analysing and quantifying statements of possible positive and/or negative consequences for past, current and future scenarios.</p>
-            <p>Peer Advisory Group is committed to provide its clients sophisticated advice and warrants the provision of objective and trustworthy analysis based on actual industry experience. Our area of expertise lies within both fields: (i) the preparation of quantum and claims defence and (ii) the assessment of those - depending on our client's requirements, our team members will be able to facilitate either way.</p>
-            <p>We warrant a proactive approach by early intervention and consultancy of individual scenarios. Our team's high-calibre skillset is supplemented by technical excellence, which enables a detailed dive into the lifespan of a claim. Having been involved in providing seamless claims management services across various cases, Peer Advisory Group's approach will assist in achieving the desired outcome for our clients.</p>
+            <p>At Mush QS Consulting, we provide independent, objective, and technically sound analysis of construction and commercial claims. Our specialists combine deep industry experience with analytical precision to support clients in both the preparation and defence of claims, ensuring fairness, compliance, and strategic advantage.</p>
 
-            <h3>Services included:</h3>
+            <h3>Our Expertise</h3>
+            <ul>
+                <li>Early intervention and proactive claims management to reduce exposure</li>
+                <li>In-depth analysis of entitlement, causation, and quantum</li>
+                <li>Balanced advice for both claim preparation and claims defence</li>
+                <li>Detailed review of cost, time, and commercial impacts</li>
+                <li>Clear, evidence-based recommendations to support negotiations and settlements</li>
+            </ul>
+
+            <h3>Our Services</h3>
             <ul>
                 <li>Claims Management and Advisory</li>
-                <li>Quantum Analysis</li>
-                <li>Claims Assessment</li>
-                <li>Interpretation of Claims</li>
-                <li>Development of a Claims Strategy</li>
-                <li>Review and interpretation of quantum claims</li>
-                <li>Quantum and Claims Defence</li>
-                <li>Commercial Management</li>
-                <li>Contracts Advisory</li>
-                <li>Contracts Administration</li>
-                <li>Cost Engineering</li>
-                <li>Cost Estimating</li>
-                <li>Project Controls Services</li>
-                <li>Commercial Risk Management</li>
-                <li>Cost Analysis and Forecasting</li>
+                <li>Quantum Analysis and Assessment</li>
+                <li>Interpretation and Review of Claims</li>
+                <li>Claims Defence and Strategy Development</li>
+                <li>Contractual and Commercial Risk Analysis</li>
+                <li>Cost Estimating, Forecasting, and Cost Engineering Support</li>
             </ul>
         </div>
     </section>

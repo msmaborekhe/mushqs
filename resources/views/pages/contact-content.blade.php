@@ -20,16 +20,19 @@
                     <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
                         <div>
                             <label for="name">Name</label>
-                            <input id="name" name="name" type="text" required style="width:100%;padding:10px;border:1px solid #e5e7eb;border-radius:8px">
+                            <input id="name" name="name" type="text" required
+                                   style="width:100%;padding:10px;border:1px solid #e5e7eb;border-radius:8px">
                         </div>
                         <div>
                             <label for="email">Email</label>
-                            <input id="email" name="email" type="email" required style="width:100%;padding:10px;border:1px solid #e5e7eb;border-radius:8px">
+                            <input id="email" name="email" type="email" required
+                                   style="width:100%;padding:10px;border:1px solid #e5e7eb;border-radius:8px">
                         </div>
                     </div>
                     <div style="margin-top:12px">
                         <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="4" required style="width:100%;padding:10px;border:1px solid #e5e7eb;border-radius:8px"></textarea>
+                        <textarea id="message" name="message" rows="4" required
+                                  style="width:100%;padding:10px;border:1px solid #e5e7eb;border-radius:8px"></textarea>
                     </div>
                     <button class="btn" type="submit" style="margin-top:12px">Send Message</button>
                 </form>
@@ -37,8 +40,7 @@
             <div class="panel">
                 <h3>Contact Details</h3>
                 <p>Email: <a href="mailto:arthur@mushqs.com.au">arthur@mushqs.com.au</a></p>
-                <p>Phone: <a href="tel:+000000000">+00 000 000</a></p>
-                <p>Address: Your business address here</p>
+                <p>Phone: <a href="tel:+61402744617">+61 402 744 617</a></p>
             </div>
         </div>
     </section>

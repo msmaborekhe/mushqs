@@ -3,16 +3,20 @@
     <section class="hero hero-slider">
         <div class="slider" id="homeHeroSlider">
             <div class="slide active">
-                <img src="{{ url('/images/Cover.jpg') }}" alt="Mush QS Hero 1" onerror="this.style.display='none'">
+                <img src="{{ url('/images/Cover.jpg') }}" loading="lazy" alt="Mush QS Hero 1"
+                     onerror="this.style.display='none'">
             </div>
             <div class="slide">
-                <img src="{{ url('/images/About us.jpg') }}" alt="Mush QS Hero 2" onerror="this.style.display='none'">
+                <img src="{{ url('/images/About us.jpg') }}" loading="lazy" alt="Mush QS Hero 2"
+                     onerror="this.style.display='none'">
             </div>
             <div class="slide">
-                <img src="{{ url('/images/Values.jpg') }}" alt="Mush QS Hero 3" onerror="this.style.display='none'">
+                <img src="{{ url('/images/Values.jpg') }}" loading="lazy" alt="Mush QS Hero 3"
+                     onerror="this.style.display='none'">
             </div>
             <div class="slide">
-                <img src="{{ url('/images/Cost.jpg') }}" alt="Mush QS Hero 4" onerror="this.style.display='none'">
+                <img src="{{ url('/images/Cost.jpg') }}" loading="lazy" alt="Mush QS Hero 4"
+                     onerror="this.style.display='none'">
             </div>
             <div class="overlay"></div>
             <div class="content">
@@ -20,8 +24,9 @@
                     <h1 id="heroTitle"></h1>
                     <p id="heroText"></p>
                     <div>
-                        <a class="btn" href="/services">Explore Services</a>
-                        <a class="btn btn-outline" href="/projects" style="margin-left:10px">View Projects</a>
+                        <a class="btn btn-outline btn-outline-primary" href="/services">Explore Services</a>
+                        <a class="btn btn-outline btn-outline-light" href="/projects" style="margin-left:10px">View
+                            Projects</a>
                     </div>
                     <div class="badges" id="heroBadges" aria-live="polite">
                         <span class="badge">Cost Planning</span>
@@ -41,7 +46,7 @@
     </section>
 
     <!-- ABOUT SNAPSHOT -->
-    <section>
+    <section class="bg-tint-primary">
         <div class="container values">
             <div>
                 <h2 class="section-title">About Mush QS</h2>
@@ -51,13 +56,14 @@
                 <p><a href="/about">Learn more about us →</a></p>
             </div>
             <div>
-                <img src="{{ url('/images/About us.jpg') }}" alt="About Mush QS" onerror="this.style.display='none'">
+                <img src="{{ url('/images/About us.jpg') }}" loading="lazy" alt="About Mush QS"
+                     onerror="this.style.display='none'">
             </div>
         </div>
     </section>
 
     <!-- SERVICES SNAPSHOT -->
-    <section>
+    <section class="bg-white">
         <div class="container">
             <h2 class="section-title">What we do</h2>
             <p class="section-sub">A concise set of services covering pre‑contract and post‑contract needs.</p>
@@ -94,10 +100,11 @@
     </section>
 
     <!-- PROJECTS SNAPSHOT -->
-    <section>
+    <section class="bg-tint-primary">
         <div class="container values">
             <div>
-                <img src="{{ url('/images/aus_experience.png') }}" alt="Projects" onerror="this.style.display='none'">
+                <img src="{{ url('/images/aus_experience.png') }}" loading="lazy" alt="Projects"
+                     onerror="this.style.display='none'">
             </div>
             <div>
                 <h2 class="section-title">Projects</h2>
@@ -110,7 +117,7 @@
     </section>
 
     <!-- FINAL CTA -->
-    <section>
+    <section class="bg-white">
         <div class="container" style="text-align:center">
             <h2 class="section-title" style="margin-bottom:6px">Have a project in mind?</h2>
             <p class="section-sub" style="margin-bottom:16px">Get clear, defensible numbers and proactive commercial
@@ -131,7 +138,7 @@
             // Distinct content for each slide
             const slideContents = [
                 {
-                    title: 'Clarity in Cost. Confidence in Delivery.',
+                    title: 'Cost Clarity. Delivery Confidence.',
                     text: 'Brisbane-based quantity surveying and commercial advisory. We plan, control and protect value across every stage of your project.',
                     badges: ['Cost Planning', 'Contracts', 'Claims', 'Procurement']
                 },
@@ -157,7 +164,7 @@
 
             function renderContent(i) {
                 const c = slideContents[i % slideContents.length];
-                if (titleEl) titleEl.textContent = c.title;
+                if (titleEl) titleEl.innerHTML = c.title;
                 if (textEl) textEl.textContent = c.text;
                 if (badgesEl) {
                     badgesEl.innerHTML = c.badges.map(b => `<span class="badge">${b}</span>`).join('');

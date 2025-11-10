@@ -5,7 +5,7 @@
         <div class="container hero-wrap">
             <div>
                 <h1>Procurement</h1>
-                <p>PROCUREMENT: THE ACT TO OBTAIN GOODS AND SERVICES FOR A SOLICITED COMPANY IN THE URGE OF SUPPORT TO FULFIL ITS OPERATIONS AND/OR OBLIGATIONS.</p>
+                <p>Procurement is the process of obtaining goods and services to support an organisation’s operations and obligations.</p>
             </div>
             <div>
                 <img src="{{ url('/images/Cost.jpg') }}" alt="Procurement" onerror="this.style.display='none'">
@@ -16,9 +16,9 @@
     <section>
         <div class="container">
             <h2 class="section-title">Procurement Services</h2>
-            <p>Peer Advisory efficiently collaborates with its clients in the procurement process to assess, develop, and implement expedient procurement and purchasing models, as well as supporting organisations through the most beneficial contemporary practice policies, procedures and toolkits to ensure both cost-efficiency and compliance.</p>
-            <p>Peer Advisory's approach brings the most valuable outcomes through reviewing relevant existing policies, procedures, systems, and current spend and purchasing behaviours and practices by key business areas. Our consultants are highly acclaimed for having the ability to align with current organisation objectives, best practices and latest changes in legislation.</p>
-            <p>Peer Advisory Group ensures that multiple stakeholders are engaged in the procurement and transaction processes via workshops or interviews in order to attain high-level analysis of opportunities.</p>
+            <p>Mush QS efficiently collaborates with its clients in the procurement process to assess, develop, and implement expedient procurement and purchasing models, as well as supporting organisations through the most beneficial contemporary practice policies, procedures and toolkits to ensure both cost-efficiency and compliance.</p>
+            <p>Mush QS's approach brings the most valuable outcomes through reviewing relevant existing policies, procedures, systems, and current spend and purchasing behaviours and practices by key business areas. Our consultants are highly acclaimed for having the ability to align with current organisation objectives, best practices and latest changes in legislation.</p>
+            <p>Mush QS ensures that multiple stakeholders are engaged in the procurement and transaction processes via workshops or interviews in order to attain high-level analysis of opportunities.</p>
             <p>Our consultants have gained a holistic approach to identify key points and realize the best outcomes. They have an in-depth and proven expertise in delivering.</p>
 
             <h3>Services include:</h3>

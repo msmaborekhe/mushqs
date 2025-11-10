@@ -4,8 +4,8 @@
     <section class="hero">
         <div class="container hero-wrap">
             <div>
-                <h1>Tender Preparation</h1>
-                <p>TENDERING: THE CHALLENGING PROCESS OF CREATING A PROPOSAL FOR ACCEPTANCE IN SATISFACTION TO MEET A SOLICITED BUSINESS' REQUIREMENTS AND NEEDS.</p>
+                <h1>Tender Preparation and Evaluation Services</h1>
+                <p>Bidding for projects can be complex and time-consuming. The quality, structure, and clarity of your tender submission often determine your competitive edge.</p>
             </div>
             <div>
                 <img src="{{ url('/images/About us.jpg') }}" alt="Tender Preparation" onerror="this.style.display='none'">
@@ -16,21 +16,24 @@
     <section>
         <div class="container">
             <h2 class="section-title">Tender Preparation and Evaluation Services</h2>
-            <p>Bidding can be a complex and demanding process, which can require tailored submissions due to its dynamic challenges. Despite other factors, the quality of the tender submissions can determine the winning bidder.</p>
-            <p>Our expert team will assist you in tender writing and bid management in order to prepare outstanding tender documents to put your business ahead of the competition.</p>
+            <p>At Mush QS Consulting, we support clients through every stage of the tender process — from opportunity identification to submission — ensuring proposals are compliant, persuasive, and positioned for success.</p>
 
-            <h3>Services include:</h3>
+            <h3>Our Expertise</h3>
             <ul>
-                <li>Guidance throughout the tender and/or procurement portals</li>
-                <li>Access and review tender documents and identify critical requirements</li>
-                <li>Guidance throughout the tender process, from expression of interest to obtaining invitations to tender and tender submissions</li>
-                <li>Review and advice on applicable tenders for your business</li>
-                <li>Registration of your business</li>
-                <li>Preparation of tender proposals and/or submissions</li>
-                <li>Developing tender strategies and tailored tender tracking services</li>
-                <li>Developing of capability statements</li>
-                <li>Customised, compelling and persuasive narrative, ensuring to showcase the business' highlights and key differentiators</li>
-                <li>Market analysis and SME advice on new market entry opportunities</li>
+                <li>In-depth knowledge of government and private sector procurement processes</li>
+                <li>Proven experience in preparing high-scoring tenders and bids across multiple industries</li>
+                <li>Tailored strategies to enhance competitiveness and compliance</li>
+                <li>Support from initial registration to final submission</li>
+            </ul>
+
+            <h3>Our Services</h3>
+            <ul>
+                <li>Guidance through tender and procurement portals</li>
+                <li>Review and interpretation of tender documents and critical requirements</li>
+                <li>Advice on suitable tenders aligned with your business capability</li>
+                <li>Preparation and submission of tender proposals and expressions of interest</li>
+                <li>Development of tender strategies and tracking systems</li>
+                <li>Creation of compelling capability statements and bid narratives</li>
             </ul>
         </div>
     </section>
