@@ -1,8 +1,15 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYMENT_DIR=$HOME/public_html
-    - cp -R $DEPLOYMENT_DIR/repository_mushqs/public/* $DEPLOYMENT_DIR/
-    - php $DEPLOYMENT_DIR/repository_mushqs/artisan config:cache
-    - php $DEPLOYMENT_DIR/repository_mushqs/artisan route:cache
-    - php $DEPLOYMENT_DIR/repository_mushqs/artisan view:cache
+    # Set paths
+    - export DEPLOYMENT_SOURCE=$HOME/repository_mushqs
+    - export DEPLOYMENT_TARGET=$HOME/public_html
+
+    # Copy public assets to the live folder
+    - /bin/cp -R $DEPLOYMENT_SOURCE/public/* $DEPLOYMENT_TARGET/
+
+    # Clear and cache Laravel configs
+    - /opt/cpanel/ea-php82/root/usr/bin/php $DEPLOYMENT_SOURCE/artisan config:clear || true
+    - /opt/cpanel/ea-php82/root/usr/bin/php $DEPLOYMENT_SOURCE/artisan config:cache || true
+    - /opt/cpanel/ea-php82/root/usr/bin/php $DEPLOYMENT_SOURCE/artisan route:cache || true
+    - /opt/cpanel/ea-php82/root/usr/bin/php $DEPLOYMENT_SOURCE/artisan view:cache || true
