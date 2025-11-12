@@ -1,21 +1,20 @@
 ---
 deployment:
   tasks:
-    # Define source (repo) and target (live public_html)
     - export DEPLOYMENT_SOURCE=$HOME/repository_mushqs
     - export DEPLOYMENT_TARGET=$HOME/public_html
 
-    #  Copy Laravel public files to public_html
-    - /bin/rsync -av --delete $DEPLOYMENT_SOURCE/public/ $DEPLOYMENT_TARGET/
+    # Copy Laravel public files (without deleting existing folders)
+    - /bin/rsync -av $DEPLOYMENT_SOURCE/public/ $DEPLOYMENT_TARGET/
 
-    #  Copy the bridge index file (used to load Laravel correctly)
+    # Copy the bridge index file (used to load Laravel correctly)
     - /bin/cp $DEPLOYMENT_SOURCE/index.public_html.example.php $DEPLOYMENT_TARGET/index.php
 
-    #  Set correct permissions (optional but helps avoid 500 errors)
+    # Set correct permissions
     - /bin/find $DEPLOYMENT_TARGET -type f -exec chmod 644 {} \;
     - /bin/find $DEPLOYMENT_TARGET -type d -exec chmod 755 {} \;
 
-    #  Optimize Laravel cache (safe to ignore errors if artisan not found)
+    # Optimize Laravel cache
     - /opt/cpanel/ea-php82/root/usr/bin/php $DEPLOYMENT_SOURCE/artisan config:cache || true
     - /opt/cpanel/ea-php82/root/usr/bin/php $DEPLOYMENT_SOURCE/artisan route:cache || true
     - /opt/cpanel/ea-php82/root/usr/bin/php $DEPLOYMENT_SOURCE/artisan view:cache || true
