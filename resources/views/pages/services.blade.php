@@ -49,4 +49,5 @@
 </main>
 HTML)
 
+
 @include('layouts.app', ['title' => $title, 'slot' => $content])
