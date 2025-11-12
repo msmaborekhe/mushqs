@@ -32,7 +32,16 @@
             font-family: 'Poppins', system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif;
             color: var(--text);
             background: var(--bg);
-            line-height: 1.6
+            line-height: 1.6;
+            min-height: 100vh; /* ensure full viewport height */
+            display: flex; /* enable sticky footer layout */
+            flex-direction: column;
+        }
+
+        /* Page wrapper to push footer to the bottom on short pages */
+        .page {
+            flex: 1 0 auto;
+            width: 100%;
         }
 
         a {
@@ -615,7 +624,9 @@
     </div>
 </header>
 
+<div class="page">
 {!! $slot ?? '' !!}
+</div>
 
 <footer>
     <div class="container"
