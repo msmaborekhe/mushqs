@@ -6,6 +6,8 @@ use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Response;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Str;
 
 Route::get('/', function () {
     return view('home');
@@ -28,18 +30,42 @@ Route::view('/terms', 'pages.terms');
 Route::view('/thank-you', 'pages.thank-you');
 
 Route::post('/contact', function (Request $request) {
-    $data = $request->validate([
-        'name' => ['required', 'string', 'max:255'],
-        'email' => ['required', 'email', 'max:255'],
-        'message' => ['required', 'string', 'max:5000'],
+    $rid = (string) Str::uuid();
+    Log::info("[Contact][$rid] Request received", [
+        'ip' => $request->ip(),
+        'ua' => $request->userAgent(),
+        'path' => $request->path(),
+        'method' => $request->method(),
     ]);
 
+    Log::info("[Contact][$rid] Starting validation");
     try {
+        $data = $request->validate([
+            'name' => ['required', 'string', 'max:255'],
+            'email' => ['required', 'email', 'max:255'],
+            'message' => ['required', 'string', 'max:5000'],
+        ]);
+        Log::info("[Contact][$rid] Validation passed", ['name' => $data['name'], 'email' => $data['email']]);
+    } catch (\Illuminate\Validation\ValidationException $ve) {
+        Log::warning("[Contact][$rid] Validation failed", ['errors' => $ve->errors()]);
+        throw $ve;
+    }
+
+    try {
+        $mailer = config('mail.default');
+        $fromAddress = config('mail.from.address');
+        Log::info("[Contact][$rid] Attempting to send email", ['mailer' => $mailer, 'from' => $fromAddress]);
         Mail::to('arthur@mushqs.com.au')->send(new ContactMessage($data['name'], $data['email'], $data['message']));
+        Log::info("[Contact][$rid] Email dispatched successfully");
     } catch (\Throwable $e) {
+        Log::error("[Contact][$rid] Failed to send email: " . $e->getMessage(), [
+            'exception' => $e,
+            'mailer' => config('mail.default'),
+        ]);
         return back()->withInput()->withErrors(['email' => 'We could not send your message. Please try again later.']);
     }
 
+    Log::info("[Contact][$rid] Redirecting to thank-you");
     return redirect('/thank-you');
 })->withoutMiddleware(\App\Http\Middleware\VerifyCsrfToken::class);
 
