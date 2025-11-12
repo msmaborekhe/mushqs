@@ -1,0 +1,8 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYMENT_DIR=$HOME/public_html
+    - cp -R $DEPLOYMENT_DIR/repository_mushqs/public/* $DEPLOYMENT_DIR/
+    - php $DEPLOYMENT_DIR/repository_mushqs/artisan config:cache
+    - php $DEPLOYMENT_DIR/repository_mushqs/artisan route:cache
+    - php $DEPLOYMENT_DIR/repository_mushqs/artisan view:cache
