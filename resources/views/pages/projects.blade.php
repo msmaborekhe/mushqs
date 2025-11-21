@@ -46,7 +46,6 @@
             </div>
             <div class="grid-3" style="margin-top:20px">
                 <div class="card"><h3>Commercial & Offices</h3></div>
-                <div class="card"><h3>Commercial & Offices</h3></div>
                 <div class="card"><h3>Residential</h3></div>
                 <div class="card"><h3>Retail, Hospitality & Leisure</h3></div>
                 <div class="card"><h3>Industrial / Local Government</h3></div>
