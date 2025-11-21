@@ -5,9 +5,6 @@
                 <h1>Contact Us</h1>
                 <p>Let's discuss your project requirements and how we can help.</p>
             </div>
-            <div>
-                <img src="{{ url('/images/Conclusion.jpg') }}" alt="Contact" onerror="this.style.display='none'">
-            </div>
         </div>
     </section>
 

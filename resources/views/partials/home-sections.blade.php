@@ -138,7 +138,7 @@
             // Distinct content for each slide
             const slideContents = [
                 {
-                    title: 'Cost Clarity. Delivery Confidence.',
+                    title: 'Construction Cost Clarity. Delivery Confidence.',
                     text: 'Brisbane-based quantity surveying and commercial advisory. We plan, control and protect value across every stage of your project.',
                     badges: ['Cost Planning', 'Contracts', 'Claims', 'Procurement']
                 },

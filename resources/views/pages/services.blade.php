@@ -36,10 +36,6 @@
                     <img src="images/services/procurement.jpeg" alt="Procurement" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'">
                     <span class="label">Procurement</span>
                 </a>
-                <a class="service-tile" href="/services/engineering-management">
-                    <img src="images/services/engineering.jpeg" alt="Engineering Management" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'">
-                    <span class="label">Engineering Management</span>
-                </a>
             </div>
             <div class="service-cta">
                 <a class="btn btn-outline" href="/contact">Request a Proposal</a>

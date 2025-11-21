@@ -45,12 +45,12 @@
                 </div>
             </div>
             <div class="grid-3" style="margin-top:20px">
-                <div class="card"><h3>Commercial & Offices</h3><p>TIMB Head Office, Harare — US$15m</p></div>
-                <div class="card"><h3>Commercial & Offices</h3><p>Corporate Offices – Mashonaland Holdings, Harare — US$3.7m</p></div>
-                <div class="card"><h3>Residential</h3><p>ZIMRA Three-Bedroom Flats, Plumtree — US$3.5m</p></div>
-                <div class="card"><h3>Retail, Hospitality & Leisure</h3><p>Riverside Walk Shopping Mall, Harare — US$6m</p></div>
-                <div class="card"><h3>Industrial / Local Government</h3><p>Nyamapanda Solar & Palisade Fencing — US$355k</p></div>
-                <div class="card"><h3>Industrial / Local Government</h3><p>Plumtree Border Facilities — US$200k</p></div>
+                <div class="card"><h3>Commercial & Offices</h3></div>
+                <div class="card"><h3>Commercial & Offices</h3></div>
+                <div class="card"><h3>Residential</h3></div>
+                <div class="card"><h3>Retail, Hospitality & Leisure</h3></div>
+                <div class="card"><h3>Industrial / Local Government</h3></div>
+                <div class="card"><h3>Airport</h3></div>
             </div>
             <br>
             <img src="images/zim_experience.png" alt="Zimbabwe Experience" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'">
